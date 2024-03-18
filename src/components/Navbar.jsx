@@ -1,30 +1,13 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap';
 
 
 
 
-function Navbar() {
+const Navbar = () => {
     const currentPage = useLocation().pathname;
 
-    // useEffect(() => {
-    //     const navbarClick = document.querySelector('.navbar-toggler');
-
-    //     const handleNavbarClick = () => {
-    //         const targetId = navbarClick.getAttribute('data-target');
-    //         const targetElement = document.getElementById(targetId.slice(1));
-
-    //         if (targetElement) {
-    //             const expand = targetElement.classList.contains('show');
-    //             targetElement.classList.toggle('show', !expand);
-    //         }
-    //     };
-    //     navbarClick.addEventListener('click', handleNavbarClick);
-    //     return () => {
-    //         navbarClick.removeEventListener('click', handleNavbarClick);
-    //     };
-    // }, []);
 
     return (
         <header className='navbarHeader'>
@@ -35,7 +18,7 @@ function Navbar() {
                             <Nav.Item>
                             <Link
                                 to='/'
-                                className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+                                className={`nav-link ${currentPage === '/' && 'active'}`}
                             >
                                 About
                             </Link>
@@ -43,7 +26,7 @@ function Navbar() {
                             <Nav.Item>
                             <Link
                                 to='/Portfolio'
-                                className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+                                className={`nav-link ${currentPage === '/Portfolio' && 'active'}`}
                             >
                                 Portfolio
                             </Link>
@@ -51,7 +34,7 @@ function Navbar() {
                             <Nav.Item>
                             <Link
                                 to='/Resume'
-                                className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+                                className={`nav-link ${currentPage === '/Resume' && 'active'}`}
                             >
                                 Resume
                             </Link>
@@ -59,7 +42,7 @@ function Navbar() {
                             <Nav.Item>
                             <Link
                                 to='/Contact'
-                                className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                                className={`nav-link ${currentPage === '/Contact' && 'active'}`}
                             >
                                 Contact
                             </Link>
