@@ -10,13 +10,13 @@ const Footer = () => {
         <div className='footer-fixed-bottom p-4'>
             <div className='icon-links'>
                 <a href={linkedin} target='_blank' rel='noreferrer'>
-                    <i className='icon-link'><FaLinkedin size={40} /></i>
+                    <i className='icon-link'><FaLinkedin size={40} color='rgb(116, 186, 159)' /></i>
                 </a>
                 <a href={github} target='_blank' rel='noreferrer'>
-                    <i className='icon-link'><FaGithub size={40} color='black' /></i>
+                    <i className='icon-link'><FaGithub size={40} color='rgb(116, 186, 159)' /></i>
                 </a>
                 <a href={twitter} target='_blank' rel='noreferrer'>
-                    <i className='icon-link'><FaTwitter size={40}  /></i> 
+                    <i className='icon-link'><FaTwitter size={40} color='rgb(116, 186, 159)' /></i> 
                 </a>
             </div>
         </div>

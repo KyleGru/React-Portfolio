@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 export default function About() {
     return (
         <Container>
-            <Row className="d-flex flex-wrap justify-content-center align-items-center my-3">
+            <Row className="d-flex flex-wrap justify-content-center align-items-center my-5">
                 <Col md={4} className="text-center">
                     <img src="https://i.imgur.com/MfBzGfc.jpg" alt="Kyle Gruschow" className="img-fluid profile-image" width='200px' />
                 </Col>

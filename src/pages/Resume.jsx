@@ -3,6 +3,9 @@ import { SiExpress, SiMongodb} from 'react-icons/si';
 import { GrMysql } from 'react-icons/gr';
 
 const Resume = () => {
+
+    const resumeUrl = ""
+
     const technologies = [
         {icon: <FaHtml5 />, name: 'HTML'},
         {icon: <FaCss3Alt />, name: 'CSS'},
@@ -16,15 +19,24 @@ const Resume = () => {
     
     return (
         <div className='container'>
-            <h1>Technologies</h1>
-            <ul>
-                {technologies.map((technology, index) => (
-                    <li key={index}>
-                        {technology.icon} {technology.name}
-                    </li>
-                ))}
-            </ul>
+            <div>
+                <h1>Technologies</h1>
+                <ul>
+                    {technologies.map((technology, index) => (
+                        <li key={index}>
+                            {technology.icon} {technology.name}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div className='mt-5'>
+                <h4>Please download my resume here:</h4>
+                <a href={resumeUrl} download='Kyle%20Gruschow%20Resume.pdf' className='submitBtn' id='resumeDownloadBtn'>Resume</a>
+            </div>
         </div>
+        
+        
+        // Resume Link
     )
 }
 
