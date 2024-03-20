@@ -148,14 +148,15 @@ ul {
 @media screen and (max-width: 600px) {
   .custom-navbar {
     /* Example: Make the Navbar display as a flex container */
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
   }
 
   .nav-link {
     /* Example: Decrease font size */
-    font-size: 14px;
+    font-size: 14px !important;
+    padding: 20px 0 !important;
   }
 
   .hamburger-menu {
@@ -164,7 +165,7 @@ ul {
   }
 
   /* Hide regular navigation links on smaller screens */
-  .nav-link {
+  /* .nav-link {
     display: none;
-  }
+  } */
 }

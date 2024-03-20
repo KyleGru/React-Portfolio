@@ -13,6 +13,7 @@ const Navbar = () => {
         <header className='navbarHeader'>
             <BootstrapNavbar expand='lg' className='custom-navbar'>
                 <div className='container-fluid'>
+                <BootstrapNavbar.Toggle aria-controls="navbarNav" className="hamburger-menu" />
                     <BootstrapNavbar.Collapse id='navbarNav'>
                         <Nav className='me-auto'>
                             <Nav.Item>
