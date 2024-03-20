@@ -12,6 +12,7 @@
 
 /* Navbar */
 
+
 .custom-navbar {
     background-color: rgba(75, 167, 207, 0.806);
 }
@@ -143,3 +144,27 @@ ul {
 .icon-links a:hover .icon-link {
     transform: rotate(5deg);
   }
+
+@media screen and (max-width: 600px) {
+  .custom-navbar {
+    /* Example: Make the Navbar display as a flex container */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .nav-link {
+    /* Example: Decrease font size */
+    font-size: 14px;
+  }
+
+  .hamburger-menu {
+    /* Example: Show the hamburger menu icon */
+    display: block;
+  }
+
+  /* Hide regular navigation links on smaller screens */
+  .nav-link {
+    display: none;
+  }
+}
