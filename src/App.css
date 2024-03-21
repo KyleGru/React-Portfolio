@@ -44,7 +44,7 @@
 
 .project-card:hover {
   transform: rotate(2deg);
-  box-shadow: rgb(116, 186, 159);
+  box-shadow: 0 8px 14px rgb(116, 186, 159);
 }
 
 .card-overlay {
@@ -147,25 +147,18 @@ ul {
 
 @media screen and (max-width: 600px) {
   .custom-navbar {
-    /* Example: Make the Navbar display as a flex container */
     display: flex !important;
-    flex-direction: column !important; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column !important; 
+    align-items: center; 
   }
 
   .nav-link {
-    /* Example: Decrease font size */
     font-size: 14px !important;
     padding: 20px 0 !important;
   }
 
   .hamburger-menu {
-    /* Example: Show the hamburger menu icon */
     display: block;
   }
 
-  /* Hide regular navigation links on smaller screens */
-  /* .nav-link {
-    display: none;
-  } */
 }

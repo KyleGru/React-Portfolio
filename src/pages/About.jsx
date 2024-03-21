@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Container, Row, Col } from 'react-bootstrap';
 
 export default function About() {
